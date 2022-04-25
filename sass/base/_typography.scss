@@ -1,0 +1,26 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	padding: 3rem;
+}
+
+.heading__primary {
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+	&--main {
+		display: block;
+		letter-spacing: 3.5rem;
+		font-size: 6rem;
+		font-weight: 700;
+		animation: fadein-left 1s cubic-bezier(0.34, 1.56, 0.64, 1) 1;
+	}
+	&--sub {
+		display: block;
+		font-size: 1.74rem;
+		font-weight: 700;
+		letter-spacing: 1.74rem;
+		animation: fadein-right 1s cubic-bezier(0.34, 1.56, 0.64, 1) 1;
+	}
+}
