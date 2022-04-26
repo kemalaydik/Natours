@@ -202,6 +202,33 @@ body {
   transform: scale(0.9);
 }
 
+.feature-box {
+  box-shadow: 0rem 1.5rem 4rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.6s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.feature-box__icon {
+  font-size: 5rem;
+  color: transparent;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to right, #28b485, #7ed56f);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.feature-box:hover {
+  transform: translateY(-1.5px) scale(1.05);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -243,6 +270,7 @@ body {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: top;
+  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
@@ -259,34 +287,25 @@ body {
   left: 4rem;
   width: 8rem;
 }
-.header__icon {
-  position: absolute;
-  color: #777;
-  top: 3rem;
-  right: 3rem;
-  font-size: 2rem;
-  cursor: pointer;
-  font-weight: 200;
-}
-.header__icon::before {
-  content: "";
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: var(--shadow-light);
-  text-align: center;
-  line-height: 4rem;
-}
 .header__logo-img {
   width: 100%;
 }
 
 .section-about {
   background: #f7f7f7;
-  padding: 25vh 0 25rem;
+  padding: 35rem 0 25rem;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 /*# sourceMappingURL=style.css.map */

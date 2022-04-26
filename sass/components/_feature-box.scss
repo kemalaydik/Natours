@@ -1,0 +1,29 @@
+.feature-box {
+	box-shadow: 0rem 1.5rem 4rem 0 rgba(0, 0, 0, 0.2);
+	font-size: 1.5rem;
+	background-color: rgba($white, 0.8);
+	padding: 2.5rem;
+	text-align: center;
+	border-radius: 3px;
+
+	transition: all 0.6s;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	&__icon {
+		font-size: 5rem;
+		color: transparent;
+		margin-bottom: 0.5rem;
+		background-image: linear-gradient(to right, $green-dark, $green-light);
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
+
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	&:hover {
+		transform: translateY(-1.5px) scale(1.05);
+	}
+}
