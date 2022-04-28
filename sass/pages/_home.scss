@@ -16,7 +16,23 @@
 }
 
 .section-tours {
-	padding: 20rem 0;
+	padding: 20rem 0 5rem;
 	background: $grey-light-1;
 	margin-top: -10rem;
+	text-align: center;
+}
+
+.section-stories {
+	position: relative;
+	padding-bottom: 8rem;
+}
+
+.section-booking {
+	padding: 15rem 0;
+	background-image: linear-gradient(to right bottom, $green-light, $green-dark);
+
+	.book {
+		background-image: url('../img/nat-10.jpg');
+		background-size: cover;
+	}
 }

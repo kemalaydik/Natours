@@ -20,6 +20,16 @@
 		text-transform: uppercase;
 	}
 
+	&--green {
+		background-color: $green-dark;
+		color: $white;
+		margin: 5rem auto 0;
+		border: none;
+		box-shadow: $shadow-light;
+		position: relative;
+		text-transform: uppercase;
+	}
+
 	&:hover {
 		transform: translateY(-3px);
 		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
