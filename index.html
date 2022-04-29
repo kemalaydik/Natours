@@ -16,6 +16,27 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi_toggle">
+        <label for="navi_toggle" class="navigation__btn">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"><span>01 </span>About us</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>02 </span>Tours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>03 </span>Benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>04 </span>Stories</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05 </span>Book now</a></li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+
+
     <header class="header">
         <div class="header__logo-box"><img class="header__logo-img" src="img/logo-white.png" alt="logo"></div>
         <div class="header__text-box">
@@ -234,15 +255,65 @@
 
     <section class="section-booking">
         <div class="book">
-            <form class="form">
-                <h2 class="heading-secondary">Start booking now</h2>
-                <input type="text" class="form__name" placeholder="Full name">
-                <input type="email" class="form__email" placeholder="Email address">
-                <input type="radio" id="sm-tour">
-                <input type="radio" id="lg-tour">
+            <h2 class="heading-secondary u-mb-md">Start booking now</h2>
+            <form class="book__form">
+                <div class="book__group">
+                    <input type="text" class="book__text" placeholder="Full name" id="name" required>
+                    <label for="name" class="book__text-label">Full name</label>
+                </div>
+                <div class="book__group">
+                    <input type="email" class="book__text" placeholder="Email address" id="email" required>
+                    <label for="email" class="book__text-label">Email address</label>
+                </div>
+                <div class="book__group">
+                    <div class="book__radio-group">
+                        <input type="radio" id="sm-tour" class="book__radio" name="size">
+                        <label for="sm-tour" class="book__label-radio">Small tour group
+                            <span class="book__radio-button"></span>
+                        </label>
+                    </div>
+                    <div class="book__radio-group">
+                        <input type="radio" id="lg-tour" class="book__radio" name="size">
+                        <label for="lg-tour" class="book__label-radio">Large tour group
+                            <span class="book__radio-button"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="book-group">
+                    <button class="btn btn--green">next step &nbsp;&rarr;</button>
+                </div>
             </form>
         </div>
     </section>
+
+    <footer class="footer">
+        <img src="img/logo-green-2x.png" alt="logo" class="footer__logo">
+        <div class="row">
+            <div class="col-1-of-2 footer__group">
+                <ul class="footer__list">
+                    <li class="footer__item">Company</li>
+                    <li class="footer__item">Contact us</li>
+                    <li class="footer__item">Careers</li>
+                    <li class="footer__item">Privacy Policy</li>
+                    <li class="footer__item">Terms</li>
+                </ul>
+            </div>
+            <div class="col-1-of-2 footer__group">
+                <p class="footer__paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores eaque ratione neque
+                    laudantium debitis, consectetur magni eius corporis rerum iusto, consequatur nostrum! Atque quisquam
+                    possimus nisi corporis qui deleniti!
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__content">
+            POPUP
+        </div>
+    </div>
 
 
 

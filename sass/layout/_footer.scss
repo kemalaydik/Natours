@@ -1,0 +1,38 @@
+.footer {
+	padding: 6rem 0;
+	background: darken($green-dark, 35%);
+
+	&__logo {
+		max-width: 15rem;
+		margin: 6rem auto;
+		display: block;
+	}
+
+	&__list {
+		list-style-type: none;
+		display: inline-block;
+	}
+
+	&__item {
+		text-transform: uppercase;
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+		&:hover {
+			transform: rotate(3deg);
+			box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+			color: $green-dark;
+		}
+	}
+
+	&__group {
+		border-top: 1px solid darken($white, 50%);
+		display: inline-block;
+		padding-top: 2rem;
+		color: darken($white, 50%);
+		&:not(:last-child) {
+			text-align: center;
+		}
+	}
+}
