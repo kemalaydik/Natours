@@ -1,0 +1,78 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 100vh;
+	z-index: 300;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s;
+
+	&__content {
+		@include absCenter;
+		width: 75%;
+		background-color: $white;
+		text-align: center;
+		box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		display: table;
+		overflow: hidden;
+		transform: translate(-50%, -50%) scale(0.5);
+		transition: all 0.5s 0.4s;
+		opacity: 0;
+	}
+
+	&__left {
+		width: 33%;
+		display: table-cell;
+	}
+	&__right {
+		text-align: left;
+		width: 66%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 3rem 5rem;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		column-count: 2;
+		column-gap: 4rem;
+		column-rule: 1px solid $grey-dark;
+		hyphens: auto;
+	}
+
+	&:target {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&:target &__content {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+
+	&__close {
+		&:link,
+		&:visited {
+			position: absolute;
+			top: 2rem;
+			right: 3rem;
+			text-decoration: none;
+			font-size: 4rem;
+			color: $grey-dark;
+			font-weight: 700;
+		}
+
+		&:hover {
+			color: $green-dark;
+		}
+	}
+}
