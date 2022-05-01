@@ -12,7 +12,7 @@
 
 	&__content {
 		@include absCenter;
-		width: 75%;
+		width: 80%;
 		background-color: $white;
 		text-align: center;
 		box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -27,6 +27,10 @@
 	&__left {
 		width: 33%;
 		display: table-cell;
+		vertical-align: middle;
+		@include respond(phone) {
+			display: none;
+		}
 	}
 	&__right {
 		text-align: left;
@@ -34,10 +38,14 @@
 		display: table-cell;
 		vertical-align: middle;
 		padding: 3rem 5rem;
+		@include respond(phone) {
+			padding: 2rem 2rem;
+		}
 	}
 
 	&__img {
 		display: block;
+		object-fit: cover;
 		width: 100%;
 	}
 
@@ -47,6 +55,9 @@
 		column-gap: 4rem;
 		column-rule: 1px solid $grey-dark;
 		hyphens: auto;
+		@include respond(tab-port) {
+			column-count: 1;
+		}
 	}
 
 	&:target {

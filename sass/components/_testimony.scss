@@ -2,14 +2,21 @@
 	background: $white;
 	box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.2);
 	padding: 3.5rem 5rem;
-	width: 80rem;
-	margin: 0 auto;
+	max-width: min(80rem, 80%);
+	margin: 0 auto 3rem;
 	transform: skewX(-10deg);
+	border-radius: 3px;
 	opacity: 0.8;
 	@include clearfix;
 
+	@include respond(tab-port) {
+		transform: skewX(0deg);
+	}
 	& > * {
 		transform: skewX(10deg);
+		@include respond(tab-port) {
+			transform: skewX(0deg);
+		}
 	}
 
 	&__author {
@@ -34,6 +41,11 @@
 		backface-visibility: hidden;
 		shape-outside: circle(50% at 50% 50%);
 		transform: translateX(-3rem) skewX(10deg);
+		@include respond(tab-port) {
+			transform: translateX(0rem) skewX(0deg);
+			float: none;
+			margin: 3rem auto;
+		}
 	}
 
 	&__img {
