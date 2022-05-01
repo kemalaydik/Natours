@@ -55,11 +55,6 @@ body {
   }
 }
 
-::selection {
-  background-color: #28b485;
-  color: white;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -1030,7 +1025,7 @@ body {
 
 .section-about {
   background: #f7f7f7;
-  padding: 25rem 2rem 25rem;
+  padding: 20rem 2rem 25rem;
   margin-top: -20vh;
 }
 
@@ -1091,4 +1086,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.comp.css.map */
